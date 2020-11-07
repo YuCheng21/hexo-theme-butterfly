@@ -31,6 +31,8 @@ else if is_category()
     meta(name="robots" content="noindex,follow")
 else if is_tag()
     meta(name="robots" content="noindex,follow")
+else if is_post()
+    meta(name="robots" content="index,nofollow")
 
 meta(charset='UTF-8')
 meta(http-equiv="X-UA-Compatible" content="IE=edge")

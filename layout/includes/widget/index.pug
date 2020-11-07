@@ -1,8 +1,4 @@
 #aside_content.aside_content
-  if theme.aside.card_author.enable
-    !=partial('includes/widget/card_author', {}, {cache:theme.fragment_cache})
-  if theme.aside.card_announcement.enable
-    !=partial('includes/widget/card_announcement', {}, {cache:theme.fragment_cache})
   .sticky_layout
     if is_post()
       if showToc
@@ -12,6 +8,10 @@
       if theme.ad && theme.ad.aside
         !=partial('includes/widget/card_ad', {}, {cache:theme.fragment_cache})
     else
+      if theme.aside.card_author.enable
+        !=partial('includes/widget/card_author', {}, {cache:theme.fragment_cache})
+      if theme.aside.card_announcement.enable
+        !=partial('includes/widget/card_announcement', {}, {cache:theme.fragment_cache})
       if theme.aside.card_recent_post.enable
         !=partial('includes/widget/card_recent_post', {}, {cache:theme.fragment_cache})
       if theme.ad && theme.ad.aside
