@@ -1,31 +1,31 @@
 if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
   [data-theme='dark']
-    --global-bg: darken(#121212, 2)
+    --global-bg: darken(#444444, 2)
     --font-color: alpha(#FFFFFF, .7)
     --hr-border: alpha(#FFFFFF, .4)
     --hr-before-color: alpha(#FFFFFF, .7)
-    --search-bg: #121212
+    --search-bg: #444444
     --search-input-color: alpha(#FFFFFF, .7)
     --search-result-title: alpha(#FFFFFF, .9)
-    --preloader-bg: darken(#121212, 2)
+    --preloader-bg: darken(#444444, 2)
     --preloader-color: alpha(#FFFFFF, .7)
-    --tab-border-color: #2c2c2c
-    --tab-botton-bg: #2c2c2c
+    --tab-border-color: #666666
+    --tab-botton-bg: #666666
     --tab-botton-color: alpha(#FFFFFF, .7)
-    --tab-button-hover-bg: lighten(#121212, 15)
-    --tab-button-active-bg: #121212
-    --card-bg: #121212
-    --sidebar-bg: #121212
-    --btn-hover-color: lighten(#121212, 40)
+    --tab-button-hover-bg: lighten(#444444, 15)
+    --tab-button-active-bg: #444444
+    --card-bg: #4D4D4D
+    --sidebar-bg: #444444
+    --btn-hover-color: lighten(#444444, 40)
     --btn-color: alpha(#FFFFFF, .7)
-    --btn-bg: lighten(#121212, 5)
-    --text-bg-hover: lighten(#121212, 15)
+    --btn-bg: lighten(#444444, 5)
+    --text-bg-hover: lighten(#444444, 15)
     --light-grey: alpha(#FFFFFF, .7)
     --white: alpha(#FFFFFF, .9)
     --text-highlight-color: alpha(#FFFFFF, .9)
     --blockquote-color: alpha(#FFFFFF, .7)
-    --blockquote-bg: lighten(#121212, 10)
-    --reward-pop: lighten(#121212, 10)
+    --blockquote-bg: lighten(#444444, 10)
+    --reward-pop: lighten(#444444, 10)
     --toc-link-color: alpha(#FFFFFF, .6)
 
     #web_bg:before,
@@ -39,7 +39,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
 
     #article-container
       code
-        background: #2c2c2c
+        background: #666666
 
       pre > code
         background: 0
@@ -55,14 +55,14 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     #page-header
       & > #nav.fixed,
       &.no-top-img #nav
-        background: alpha(#121212, .8)
+        background: alpha(#444444, .8)
         box-shadow: 0 5px 6px -5px rgba(133, 133, 133, 0)
 
     // 代碼框
     #article-container
       pre,
       .highlight:not(.js-file-line-container)
-        background-color: lighten(#121212, 2) !important
+        background-color: lighten(#444444, 2) !important
         color: alpha(#FFFFFF, .7) !important
 
       figure.highlight
@@ -70,25 +70,25 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
 
         if hexo-config('highlight_settings') && hexo-config('highlight_settings.enable')
           table::-webkit-scrollbar-thumb
-            background: lighten(#121212, 5)
+            background: lighten(#444444, 5)
 
           .line:before
             color: alpha(#FFFFFF, .7) !important
 
           .hljs
-            background-color: lighten(#121212, 2) !important
+            background-color: lighten(#444444, 2) !important
 
         pre[class*='language-']::-webkit-scrollbar-thumb
-          background: lighten(#121212, 5)
+          background: lighten(#444444, 5)
 
         .highlight-tools
-          background: lighten(#121212, 3) !important
+          background: lighten(#444444, 3) !important
           color: #90a4ae !important
 
     #post-comment
       #comment-switch
         if hexo-config('comments.text')
-          background: #2c2c2c !important
+          background: #666666 !important
 
         .switch-btn
           filter: brightness(.8)
@@ -120,7 +120,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
         color: alpha(#FFFFFF, .7) !important
 
       input
-        background-color: #121212
+        background-color: #444444
 
     // Gitalk
     #gitalk-container
@@ -137,20 +137,20 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
           color: alpha(#FFFFFF, .7)
 
         .dsqjs-order-label
-          background-color: lighten(#121212, 5)
+          background-color: lighten(#444444, 5)
 
         .dsqjs-post-body
           color: alpha(#FFFFFF, .7)
 
           code,
           pre
-            background: #2c2c2c
+            background: #666666
 
           blockquote
             color: alpha(#FFFFFF, .7)
 
     #artitalk_main #lazy
-      background: #121212
+      background: #444444
 
     #operare_artitalk .c2
-      background: #121212
+      background: #444444
