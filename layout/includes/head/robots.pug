@@ -1,0 +1,15 @@
+if page.robots
+    meta(name="robots" content=page.robots)
+else if is_home()
+    if page.prev == 0
+        meta(name="robots" content="index,follow")
+    else
+        meta(name="robots" content="noindex,follow")
+else if is_archive()
+    meta(name="robots" content="noindex,follow")
+else if is_category()
+    meta(name="robots" content="noindex,follow")
+else if is_tag()
+    meta(name="robots" content="noindex,follow")
+else if is_post()
+    meta(name="robots" content="index,nofollow")

@@ -18,21 +18,7 @@
 - var pageCopyright = config.copyright || config.author
 - var themeColor = theme.display_mode === 'dark' ? '#0d0d0d' : '#ffffff'
 
-if page.robots
-    meta(name="robots" content=page.robots)
-else if is_home()
-    if page.prev == 0
-        meta(name="robots" content="index,follow")
-    else
-        meta(name="robots" content="noindex,follow")
-else if is_archive()
-    meta(name="robots" content="noindex,follow")
-else if is_category()
-    meta(name="robots" content="noindex,follow")
-else if is_tag()
-    meta(name="robots" content="noindex,follow")
-else if is_post()
-    meta(name="robots" content="index,nofollow")
+include ./head/robots.pug
 
 meta(charset='UTF-8')
 meta(http-equiv="X-UA-Compatible" content="IE=edge")
@@ -99,14 +85,3 @@ include ./head/noscript.pug
 !=partial('includes/head/js', {}, {cache:theme.fragment_cache})
 
 !=fragment_cache('injectHead', function(){return injectHtml(theme.inject.head)})
-
-meta(name="msapplication-TileColor" content="#ffffff")
-meta(name="msapplication-config" content="https://cdn.jsdelivr.net/gh/YuCheng21/cdn-yucheng@v1.0/blog/favicon/browserconfig.xml")
-meta(name="theme-color" content="#ffffff")
-
-link(rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/YuCheng21/cdn-yucheng@v1.0/blog/favicon/apple-touch-icon.png")
-link(rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/YuCheng21/cdn-yucheng@v1.0/blog/favicon/favicon-32x32.png")
-link(rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/YuCheng21/cdn-yucheng@v1.0/blog/favicon/favicon-16x16.png")
-link(rel="manifest" href="https://cdn.jsdelivr.net/gh/YuCheng21/cdn-yucheng@v1.0/blog/favicon/site.webmanifest")
-link(rel="mask-icon" href="https://cdn.jsdelivr.net/gh/YuCheng21/cdn-yucheng@v1.0/blog/favicon/safari-pinned-tab.svg" color="#5bbad5")
-link(rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/YuCheng21/cdn-yucheng@v1.0/blog/favicon/favicon.ico")
