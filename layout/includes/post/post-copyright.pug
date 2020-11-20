@@ -7,11 +7,11 @@ if theme.post_copyright.enable && page.copyright !== false
     .post-copyright__author
       span.post-copyright-meta= _p('post.copyright.author') + ": "
       span.post-copyright-info
-        a(href=authorHref)=author
+        a(rel="noopener" href=authorHref)=author
     .post-copyright__type
       span.post-copyright-meta= _p('post.copyright.link') + ": "
       span.post-copyright-info
-        a(href=url_for(url))= theme.post_copyright.decode ? decodeURI(url) : url
+        a(rel="noopener" href=url_for(url))= theme.post_copyright.decode ? decodeURI(url) : url
     .post-copyright__notice
       span.post-copyright-meta= _p('post.copyright.copyright_notice') + ": "
       span.post-copyright-info!= info

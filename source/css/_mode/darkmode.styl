@@ -1,31 +1,31 @@
 if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
   [data-theme='dark']
-    --global-bg: darken(#444444, 2)
+    --global-bg: darken(#3E444A, 2)
     --font-color: alpha(#FFFFFF, .7)
     --hr-border: alpha(#FFFFFF, .4)
     --hr-before-color: alpha(#FFFFFF, .7)
-    --search-bg: #444444
+    --search-bg: #3E444A
     --search-input-color: alpha(#FFFFFF, .7)
     --search-result-title: alpha(#FFFFFF, .9)
-    --preloader-bg: darken(#444444, 2)
+    --preloader-bg: darken(#3E444A, 2)
     --preloader-color: alpha(#FFFFFF, .7)
-    --tab-border-color: #666666
-    --tab-botton-bg: #666666
+    --tab-border-color: #60666C
+    --tab-botton-bg: #60666C
     --tab-botton-color: alpha(#FFFFFF, .7)
-    --tab-button-hover-bg: lighten(#444444, 15)
-    --tab-button-active-bg: #444444
-    --card-bg: #4D4D4D
-    --sidebar-bg: #444444
-    --btn-hover-color: lighten(#444444, 40)
+    --tab-button-hover-bg: lighten(#3E444A, 15)
+    --tab-button-active-bg: #3E444A
+    --card-bg: lighten(#3E444A, 5)
+    --sidebar-bg: #3E444A
+    --btn-hover-color: lighten(#3E444A, 40)
     --btn-color: alpha(#FFFFFF, .7)
-    --btn-bg: lighten(#444444, 5)
-    --text-bg-hover: lighten(#444444, 15)
+    --btn-bg: lighten(#3E444A, 10)
+    --text-bg-hover: lighten(#3E444A, 15)
     --light-grey: alpha(#FFFFFF, .7)
     --white: alpha(#FFFFFF, .9)
     --text-highlight-color: alpha(#FFFFFF, .9)
     --blockquote-color: alpha(#FFFFFF, .7)
-    --blockquote-bg: lighten(#444444, 10)
-    --reward-pop: lighten(#444444, 10)
+    --blockquote-bg: lighten(#3E444A, 10)
+    --reward-pop: lighten(#3E444A, 10)
     --toc-link-color: alpha(#FFFFFF, .6)
 
     #web_bg:before,
@@ -34,12 +34,12 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
       position: absolute
       width: 100%
       height: 100%
-      background-color: alpha($dark-black, .7)
+      background-color: alpha(#3E444A, .7)
       content: ''
 
     #article-container
       code
-        background: #666666
+        background: #60666C
 
       pre > code
         background: 0
@@ -55,14 +55,14 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     #page-header
       & > #nav.fixed,
       &.no-top-img #nav
-        background: alpha(#444444, .8)
+        background: alpha(#3E444A, .8)
         box-shadow: 0 5px 6px -5px rgba(133, 133, 133, 0)
 
     // 代碼框
     #article-container
       pre,
       .highlight:not(.js-file-line-container)
-        background-color: lighten(#444444, 2) !important
+        background-color: lighten(#3E444A, 2) !important
         color: alpha(#FFFFFF, .7) !important
 
       figure.highlight
@@ -70,25 +70,25 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
 
         if hexo-config('highlight_settings') && hexo-config('highlight_settings.enable')
           table::-webkit-scrollbar-thumb
-            background: lighten(#444444, 5)
+            background: lighten(#3E444A, 5)
 
           .line:before
             color: alpha(#FFFFFF, .7) !important
 
           .hljs
-            background-color: lighten(#444444, 2) !important
+            background-color: lighten(#3E444A, 2) !important
 
         pre[class*='language-']::-webkit-scrollbar-thumb
-          background: lighten(#444444, 5)
+          background: lighten(#3E444A, 5)
 
         .highlight-tools
-          background: lighten(#444444, 0) !important
+          background: lighten(#3E444A, 0) !important
           color: #90a4ae !important
 
     #post-comment
       #comment-switch
         if hexo-config('comments.text')
-          background: #666666 !important
+          background: #60666C !important
 
         .switch-btn
           filter: brightness(.8)
@@ -120,7 +120,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
         color: alpha(#FFFFFF, .7) !important
 
       input
-        background-color: #444444
+        background-color: #3E444A
 
     // Gitalk
     #gitalk-container
@@ -137,20 +137,20 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
           color: alpha(#FFFFFF, .7)
 
         .dsqjs-order-label
-          background-color: lighten(#444444, 5)
+          background-color: lighten(#3E444A, 5)
 
         .dsqjs-post-body
           color: alpha(#FFFFFF, .7)
 
           code,
           pre
-            background: #666666
+            background: #60666C
 
           blockquote
             color: alpha(#FFFFFF, .7)
 
     #artitalk_main #lazy
-      background: #444444
+      background: #3E444A
 
     #operare_artitalk .c2
-      background: #444444
+      background: #3E444A
